@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions dirhistory git vscode fzf-tab zsh-navigation-tools)
+plugins=(zsh-autosuggestions dirhistory git vscode fzf-tab zsh-navigation-tools zsh-fzf-history-search)
 
 source $ZSH/oh-my-zsh.sh
 
