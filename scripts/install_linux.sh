@@ -11,7 +11,7 @@ sudo apt update
 sudo apt install -y zsh tmux fzf
 
 # Make Zsh the default shell
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 # Install Oh My Zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -41,6 +41,3 @@ rm anaconda.sh
 
 # Add Anaconda to PATH (assumes .zshrc exists)
 echo "export PATH=\"$HOME/anaconda3/bin:\$PATH\"" >> ~/.zshrc
-
-# Reload .zshrc so the path changes take effect
-source ~/.zshrc
