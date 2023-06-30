@@ -24,6 +24,7 @@ git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/p
 # Git clone dotfiles project
 cp ../.zshrc ~/
 cp ../.tmux.conf ~/
+cp ../.bash_profile ~/
 
 # Download the Anaconda bash script
 wget $ANACONDA_URL -O anaconda.sh
@@ -37,7 +38,6 @@ chmod +x anaconda.sh
 
 # Optional: Remove the installer shell script
 rm anaconda.sh
-
 
 # Add Anaconda to PATH (assumes .zshrc exists)
 echo "export PATH=\"$HOME/anaconda3/bin:\$PATH\"" >> ~/.zshrc
