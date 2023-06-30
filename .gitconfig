@@ -1,0 +1,20 @@
+[user]
+	name = dexter1691
+	email = dexter1691@users.noreply.github.com
+[push]
+  default = simple
+[alias]
+	aa = add -A
+	po = push
+	fo = fetch origin master
+	rh = reset --hard origin/master
+  ca = "!f(){ git add -A && git commit -m \"$1\" && git push; };f"
+  p = pull
+[core]
+	mergeoptions = --no-edit
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[pull]
+	rebase = true

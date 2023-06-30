@@ -1,0 +1,23 @@
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Vim swap files
+*.swp
+*.swo
+*.swn
+
+# Ignore Emacs backup files
+*~
+
+# Ignore macOS-specific files
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore Windows-specific files
+Desktop.ini
+Thumbs.db
+
+# Ignore .history files specific to VSCode
+.history
