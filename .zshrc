@@ -117,3 +117,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Updating PATH to also find local packages!
+PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+
+# pipenv shell completion
+eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"

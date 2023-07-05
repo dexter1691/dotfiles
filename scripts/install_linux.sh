@@ -27,7 +27,7 @@ git clone https://github.com/joshskidmore/zsh-fzf-history-search ${ZSH_CUSTOM:=~
 cp ../.zshrc ~/
 cp ../.tmux.conf ~/
 cp ../.bash_profile ~/
-cp ../.condarc ~/
+
 
 # Download the Anaconda bash script
 wget $ANACONDA_URL -O anaconda.sh
@@ -44,3 +44,8 @@ rm anaconda.sh
 
 # Add Anaconda to PATH (assumes .zshrc exists)
 echo "export PATH=\"$HOME/anaconda3/bin:\$PATH\"" >> ~/.zshrc
+cp ../.condarc ~/
+
+# Install pyenv and pipenv
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+pip install pipenv
